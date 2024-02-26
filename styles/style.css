@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#search-btn {
+  transform: scaleY(-1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.half {
+  flex-direction: column;
+  width: 50%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow-my-Box</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <p>EthanDotLog Presents...</p>
+      <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="search" name="q" placeholder="Enter your search...">
+        <button id="search-btn" type="submit">&#9740;</button>
+      </form>
+    </header>
+    <main>
+      <section>
+        <div class="half container">
+          <div>
+            <h2>Horizontal Offset</h2>
+            <input type="range" id="slider" min="-250" max="250" value="0">
+          </div>
+          <hr>
+          <div>
+            <h2>Vertical Offset</h2>
+            <input type="range" id="slider" min="-250" max="250" value="0">
+          </div>
+          <hr>
+          <div>
+            <h2>Blur Radius</h2>
+            <input type="range" id="slider" min="0" max="100" value="0">
+          </div>
+          <hr>
+          <div>
+            <h2>Spread Radius</h2>
+            <input type="range" id="slider" min="0" max="100" value="0">
+          </div>
+          <hr>
+          <div>
+            <h2>Color</h2>
+            <input type="range" id="slider" min="0" max="100" value="0">
+          </div>
+          <hr>
+          <div>
+            <h2>Inset</h2>
+            <input type="range" id="slider" min="0" max="100" value="0">
+          </div>
+        </div>
+        <div  class="half container">
+          <div id="shadow-box-model"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <a href="https://github.com/ethandotlog" target="_blank">Check out my portfolio</a>
+    </footer>
+    
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
