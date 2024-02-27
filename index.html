@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow-my-Box</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
     <header class="container">
+      <div></div>
       <p>EthanDotLog Presents...</p>
       <form action="https://www.google.com/search" method="get" target="_blank">
         <input type="search" name="q" placeholder="Enter your search...">
@@ -18,33 +22,71 @@
       <section>
         <div class="half container">
           <div>
-            <h2>Horizontal Offset</h2>
-            <input type="range" id="slider" min="-250" max="250" value="0">
+            <h2>Horizontal Offset:</h2>
+            <div class="value-div">
+              <p class="min-max-value">-250</p>
+              <input class="slider-el" type="range" id="slider-hoff" min="-250" max="250" value="0">
+              <p class="min-max-value">250</p>
+              <input type="number" class="value-preview" id="digit-hoff">
+            </div>
           </div>
           <hr>
           <div>
-            <h2>Vertical Offset</h2>
-            <input type="range" id="slider" min="-250" max="250" value="0">
+            <h2>Vertical Offset:</h2>
+            <div class="value-div">
+              <p class="min-max-value">-250</p>
+              <input class="slider-el" type="range" id="slider-voff" min="-250" max="250" value="0">
+              <p class="min-max-value">250</p>
+              <input type="number" class="value-preview" id="digit-voff">
+            </div>
           </div>
           <hr>
           <div>
-            <h2>Blur Radius</h2>
-            <input type="range" id="slider" min="0" max="100" value="0">
+            <h2>Blur Radius:</h2>
+            <div class="value-div">
+              <p class="min-max-value">0</p>
+              <input class="slider-el" type="range" id="slider-blur" min="0" max="400" value="0">
+              <p class="min-max-value">400</p>
+              <input type="number"  class="value-preview" id="digit-blur">
+            </div>
           </div>
           <hr>
           <div>
-            <h2>Spread Radius</h2>
-            <input type="range" id="slider" min="0" max="100" value="0">
+            <h2>Spread Radius:</h2>
+            <div class="value-div">
+              <p class="min-max-value">-250</p>
+              <input class="slider-el" type="range" id="slider-spread" min="-250" max="250" value="0">
+              <p class="min-max-value">250</p>
+              <input type="number" class="value-preview" id="digit-spread">
+            </div>
           </div>
           <hr>
           <div>
-            <h2>Color</h2>
-            <input type="range" id="slider" min="0" max="100" value="0">
+            <div>
+              <h2>Shadow Color:</h2>
+              <div class="value-div">
+                <input type="color" id="color">
+              </div>
+            </div>
+            <div>
+              <h2>Shadow Color Opacity:</h2>
+              <div class="value-div">
+                <p class="min-max-value">0</p>
+                <input class="slider-el" type="range" id="slider-shadow" min="0" max="1" step=".01" value="0">
+                <p class="min-max-value">1</p>
+                <input type="number"  class="value-preview" id="digit-shadow">
+              </div>
+            </div>
           </div>
           <hr>
           <div>
             <h2>Inset</h2>
-            <input type="range" id="slider" min="0" max="100" value="0">
+            <div class="value-div">
+                <input checked type="radio" id="radio-false" name="true-false-pair" value="false"  hidden>
+                <label class="false radio"  for="radio-false">OFF</label>
+                <input type="radio" id="radio-true" name="true-false-pair" value="true" hidden>
+                <label class="true radio" for="radio-true">ON</label>
+            </div>
           </div>
         </div>
         <div  class="half container">
