@@ -47,23 +47,28 @@ for (let i = 0; i < findNumbers.length; i++) {
 
 
 
-function linkPair(rangeId, digitId) {
-  const rangeElement = document.getElementById(`${rangeId}`);
-  const digitElement = document.getElementById(`${digitId}`);
+function linkPair(rangeElement, digitElement) {
 
   rangeElement.addEventListener('input', () => {
     digitElement.value = rangeElement.value;
-    userValues[digitElement.id] = digitElement.value
+    userValues[rangeElement.id] = digitElement.value
+    printShadow()
   })
 
   digitElement.addEventListener('input', () => {
     rangeElement.value = digitElement.value
     userValues[rangeElement.id] = rangeElement.value
+    printShadow()
   })
 }
 
 for (let i = 0; i < linkedPairs.range.length; i++) {
-  linkPair(linkedPairs.range[i], linkedPairs.digit[i])
+  const rangeElement = document.getElementById(`${linkedPairs.range[i]}`);
+  const digitElement = document.getElementById(`${linkedPairs.digit[i]}`);
+
+  linkPair(rangeElement, digitElement)
+
+  userValues[rangeElement.id] = rangeElement.value
 }
 
 
@@ -72,6 +77,7 @@ const findColor = document.getElementById("color");
 
 findColor.addEventListener("change", () => {
   HexRip(findColor.value)
+  printShadow()
 })
 
 
@@ -89,7 +95,13 @@ function HexRip(hex) {
 
 document.querySelectorAll(`input[type="radio"]`).forEach(function(radios) {
   radios.addEventListener("change", (radios) => {
-    userValues["inset"] = radios.target.value
+    if (radios.target.value === "true") {
+      userValues["inset"] = "inset"
+    } else {
+      userValues["inset"] = ""
+    }
+    console.log(radios.target.value)
+    printShadow()
   })
 });
 
@@ -103,3 +115,26 @@ const test3 = () => {
 console.log(radioFalseEl.value, radioTrueEl.value);
 console.log(radioFalseEl.checked , radioTrueEl.checked);
 }
+
+
+function printShadow() {
+shadowBoxEl.style = "";
+if (userValues.inset === "inset") {
+shadowBoxEl.style = `
+  box-shadow: ${userValues.inset} ${userValues.sliderHoff}px ${userValues.sliderVoff}px ${userValues.sliderBlur}px ${userValues.sliderSpread}px rgba(${userValues.red}, ${userValues.green}, ${userValues.blue}, ${userValues.sliderShadow});
+`
+}else {
+  shadowBoxEl.style = "";
+  shadowBoxEl.style = `
+  box-shadow: ${userValues.sliderHoff}px ${userValues.sliderVoff}px ${userValues.sliderBlur}px ${userValues.sliderSpread}px rgba(${userValues.red}, ${userValues.green}, ${userValues.blue}, ${userValues.sliderShadow});
+`
+}
+}
+
+
+function startShow() {
+  HexRip(findColor.value)
+  printShadow()
+}
+
+startShow()
