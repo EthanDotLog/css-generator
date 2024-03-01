@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow-my-Box</title>
+    <title>Shadow-Box Generator</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +11,32 @@
   </head>
   <body class="container">
     <header class="container">
-      <a class="button-top" href="../index.html">Home</a>
-      <p>What Is Shadow-Box</p>
+      <div>
+        <a class="button-top" href="../index.html">Home</a>
+      </div>
+      <p>What Is Shadow-Box?</p>
       <form action="https://www.google.com/search" method="get" target="_blank">
-        <input type="search" name="q" placeholder="Enter your search...">
+        <input type="search" name="q" placeholder="Search Google...">
         <button id="search-btn" type="submit">&#9740;</button>
       </form>
     </header>
 
     <main>
-      <section>
-        <h3>CSS box-shadow property is about to blow your mind! Think of it like a superpower – you wanna make your buttons pop? Bam! A touch of box-shadow. Need your images to look extra mysterious and dramatic? Box-shadow to the rescue! <br> Basically, it lets you cast a dope shadow around any element on your page, giving it more depth and dimension. Plus, it's easy to play with!  And here's the magic code, hot off the presses:</h3>
+      <section class="info-page">
+        <h3>CSS box-shadow property is about to blow your mind! Think of it like a superpower – you wanna make your buttons pop? Bam! A touch of box-shadow. Need your images to look extra mysterious and dramatic? Box-shadow to the rescue! <br><br> Basically, it lets you cast a dope shadow around any element on your page, giving it more depth and dimension. Plus, it's easy to play with!  And here's the magic code, hot off the presses:</h3>
         <img src="" alt="" aria-label="">
-        <h2>Breakdown of the Values</h2>
-        <ol>
-          <li><span>H-Offset:</span>Shifts that shadow to the right (positive values) or left (negative values). It's your x-axis</li>
-          <li><span>V-Offset: </span>Same deal, but for up (positive values) and down (negative values). It's your y-axis</li>
-          <li><span>Blur: </span>This softens the shadow's edges. More blur equals fuzzier shadows.</li>
-          <li><span>Spread: </span>Controls how big the shadow grows. How far it stretches across the page.</li>
-          <li><span>Color: </span>sets the color of your shadow. Time to let your creativity fly!</li>
-          <li><span>Opacity: </span>how see-through your shadow is</li>
-          <li><span>Inset: </span>This one flips the switch. Instead of the shadow sticking out, it sinks in, creating a cool inner shadow effect.</li>
-        </ol>
+        <div>
+          <h2>Breakdown of the Values</h2>
+          <ol>
+            <li><span>H-Offset: </span>Shifts that shadow to the right (positive values) or left (negative values). It's your x-axis</li>
+            <li><span>V-Offset: </span>Same deal, but for up (positive values) and down (negative values). It's your y-axis</li>
+            <li><span>Blur: </span>This softens the shadow's edges. More blur equals fuzzier shadows.</li>
+            <li><span>Spread: </span>Controls how big the shadow grows. How far it stretches across the page.</li>
+            <li><span>Color: </span>sets the color of your shadow. Time to let your creativity fly!</li>
+            <li><span>Opacity: </span>how see-through your shadow is</li>
+            <li><span>Inset: </span>This one flips the switch. Instead of the shadow sticking out, it sinks in, creating a cool inner shadow effect.</li>
+          </ol>
+        </div>
         <div class="extra-container">
           <p>Bonus: You can stack multiple box-shadow effects! Layer those shadows to create even wilder and more complex looks.</p>
         </div>
