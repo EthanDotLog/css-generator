@@ -86,7 +86,7 @@ form input {
 /*Main page*/
 section {
   display: flex;
-  height: 100%;
+  height: 100vh;
 }
 
 .half {

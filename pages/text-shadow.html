@@ -11,18 +11,106 @@
   </head>
   <body class="container">
     <header class="container">
-      <div></div>
-      <p>EthanDotLog Presents...</p>
+      <a class="button-top" href="../index.html">Home</a>
+      <p>What Is Shadow-Text</p>
       <form action="https://www.google.com/search" method="get" target="_blank">
         <input type="search" name="q" placeholder="Enter your search...">
         <button id="search-btn" type="submit">&#9740;</button>
       </form>
     </header>
+
     <main>
-      
+      <section>
+        <h3></h3>
+        <img src="" alt="" aria-label="">
+        <h2>You're coding up a website, feeling like a ninja, and then you want your text to POP, to break free from the ordinary and demand attention. That's where text-shadow swoops in, like a superhero for your bland text. <br>It adds, you guessed it, a shadow behind those letters, creating depth, dimension, and a whole lotta cool factor. You can make those words glow, look vintage, maybe even create a 3D illusion. Basically, it's your key to unleashing stylish text!</h2>
+        <ol>
+          <li><span>Horizontal-Offset: </span>shifts the shadow to the right (positive values) or the left (negative values). Think of it like your text is chillin' in the sun, and this controls where the sun is hitting it.</li>
+          <li><span>Vertical-Offset: </span>throws shade up (negative values) or down (positive values). Kinda like adjusting those shadows as the sun moves across the sky.</li>
+          <li><span>Blur-Radius: </span>Time to get fuzzy! Higher values mean a softer, more spread-out shadow. Like the difference between a crisp, well-defined shadow and one that's kinda fading into the background.</li>
+          <li><span>Color: </span>The color of your shadow! Get creative and match your website aesthetic, or go for some high-contrast madness.</li>
+          <li><span>Opacity: </span>How transparent your shadow will be.</li>
+        </ol>
+        <div class="extra-container">
+          <p>Bonus: Use a faint text-shadow to help make all your text on a page really stand out against backdrops and increase readability</p>
+        </div>
+      </section>
+      <div class="mid">
+        <p>EthanDotLog's Text-Shadow Generator</p>
+      </div>
+      <section>
+        <div class="half container">
+          <div>
+            <h2>Horizontal Offset:</h2>
+            <div class="value-div">
+              <p class="min-max-value">-250</p>
+              <input class="slider-el" type="range" id="sliderHoff" min="-250" max="250" value="5">
+              <p class="min-max-value">250</p>
+              <input type="number" class="value-preview" id="digitHoff"  value="5">
+            </div>
+          </div>
+          <hr>
+          <div>
+            <h2>Vertical Offset:</h2>
+            <div class="value-div">
+              <p class="min-max-value">-250</p>
+              <input class="slider-el" type="range" id="sliderVoff" min="-250" max="250" value="5">
+              <p class="min-max-value">250</p>
+              <input type="number" class="value-preview" id="digitVoff"  value="5">
+            </div>
+          </div>
+          <hr>
+          <div>
+            <h2>Blur Radius:</h2>
+            <div class="value-div">
+              <p class="min-max-value">0</p>
+              <input class="slider-el" type="range" id="sliderBlur" min="0" max="400" value="5">
+              <p class="min-max-value">400</p>
+              <input type="number"  class="value-preview" id="digitBlur"  value="5">
+            </div>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <h2>Shadow Color:</h2>
+              <div class="value-div">
+                <input type="color" id="color">
+              </div>
+            </div>
+            <div>
+              <h2>Shadow Color Opacity:</h2>
+              <div class="value-div">
+                <p class="min-max-value">0</p>
+                <input class="slider-el" type="range" id="sliderShadow" min="0" max="1" step=".01" value=".6">
+                <p class="min-max-value">1</p>
+                <input type="number"  class="value-preview" id="digitShadow"  value=".6">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div  class="half container">
+          <div id="shadow-text-model-container">
+            <p class="text-shadow-example" id="text-shadow-1 left">12px Sample</p>
+            <p class="text-shadow-example" id="text-shadow-2 right">16px Sample</p>
+            <p class="text-shadow-example" id="text-shadow-3 left">18px Sample</p>
+            <p class="text-shadow-example" id="text-shadow-4 right">22px Sample</p>
+            <p class="text-shadow-example" id="text-shadow-5 left">32px Sample</p>
+          </div>
+          <div>
+            <h2>Your Custom Shadow-text</h2>
+            <code id="results"></code>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="container">
-      
+      <div class="footer-buttons">
+        <a class="button-bottom" href="./box-shadow.html">Box-Shadow Generator</a>
+        <a class="button-bottom" href="./color.html">Color Generator</a>
+        <a class="button-bottom" href="./color-gradient.html">Color Gradient Generator</a>
+        <a class="button-bottom" href="./about.html">About EthanDotLog</a>
+      </div>
+      <p>Made By <a href="https://github.com/ethandotlog" target="_blank">EthanDotLog</a></p>
     </footer>
     
     <script src="../scripts/script.js"></script>
