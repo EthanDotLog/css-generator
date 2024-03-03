@@ -9,7 +9,7 @@
   <body class="container">
     <header class="container">
       <a class="button-top" href="../index.html">Home</a>
-      <p>What Is Color In CSS?</p>
+      <h2>What Is Color In CSS?</h2>
       <form action="https://www.google.com/search" method="get" target="_blank">
         <input type="search" name="q" placeholder="Search Google...">
         <button id="search-btn" type="submit">&#9740;</button>
@@ -17,114 +17,108 @@
     </header>
 
     <main>
-      <section>
+      <section class="info-page column">
         <h3>Let's dive into the wild world of color codes! You see that "rgb()" thingamajig in your CSS?  Think of it like a super cool paint mixer – it lets you create literally ANY color you can imagine.  Those three mysterious numbers inside the brackets separated by commas??? Those are the secret ingredients:  Red, Green, and Blue! <br>Why is this ridiculously awesome?  Well, instead of being stuck with boring ol' basic named colors, you unleash your inner digital artist and get way more specific.  Wanna make a super chill seafoam green? BAM, tweak those rgb values.  Need a fiery orange for a button?  A little number juggling and BOOM, you got it.</h3>
-        <img src="" alt="" aria-label="">
-        <h2></h2>
-        <ol>
-          <li><span>RGB: </span>The color property, it stands for red, green, blue. Its only one of several types available such as hex.</li>
-          <li><span>color values (red, green, blue)</span><ol>
-            <li><span>Red: </span>This bad boy goes from 0 (like, no red at all) up to 255 (pure, blinding red!).</li>
-            <li><span>Green: </span>Same deal as red – 0 is green's day off, 255 is neon green party time.</li>
-            <li><span>Blue: </span>This one keeps the color party going – 0 means blue's takin' a nap, and 255 is full-on electric blue.</li>
-          </ol></li>
-        </ol>
+        <img src="../assets/code.png" alt="" aria-label="">
+        <div>
+          <h2>Breakdown of the Values</h2>
+          <ol>
+            <li><span>RGB: </span>The color property, it stands for red, green, blue. Its only one of several types available such as hex.</li>
+            <li><span>color values (red, green, blue)</span><ol>
+              <li><span>Red: </span>This bad boy goes from 0 (like, no red at all) up to 255 (pure, blinding red!).</li>
+              <li><span>Green: </span>Same deal as red – 0 is green's day off, 255 is neon green party time.</li>
+              <li><span>Blue: </span>This one keeps the color party going – 0 means blue's takin' a nap, and 255 is full-on electric blue.</li>
+            </ol></li>
+          </ol>
+        </div>
         <div class="extra-container">
           <p>Bonus: Wanna make things see-through? The "opacity" property is your bestie – just play around with values  between 0 (invisible!) and 1 (totally solid).  And for some smooth moves, check out "transitions" – they make colors and stuff change gradually, instead of just snapping into place </p>
         </div>
       </section>
       <div class="mid">
-        <p>EthanDotLog's Color Generator</p>
+        <h2>EthanDotLog's Color Generator</h2>
       </div>
-      <section>
+      <section id="tool-element">
         <div class="half container">
-          <div>
-            <div>
-              <h2>Color #1</h2>
-              <div class="value-div">
-                <input type="color" id="color-input1">
-                <button id="color-btn-1">Randomize Color</button>
-              </div>
+          <div  class="input-section">
+            <h2>Color #1</h2>
+            <div class="value-div">
+              <input type="color" id="color-input1" class="color-select">
+              <button class="color-random-btn" id="color-btn-1">Randomize Color</button>
             </div>
           </div>
           <hr>
-          <div>
-            <div>
-              <h2>Color #2</h2>
-              <div class="value-div">
-                <input type="color" id="color-input 2">
-                <button id="color-btn-2">Randomize Color</button>
-              </div>
+          <div  class="input-section">
+            <h2>Color #2</h2>
+            <div class="value-div">
+              <input type="color" id="color-input2" class="color-select">
+              <button class="color-random-btn" id="color-btn-2">Randomize Color</button>
             </div>
           </div>
           <hr>
-          <div>
-            <div>
-              <h2>Color #3</h2>
-              <div class="value-div">
-                <input type="color" id="color-input-3">
-                <button id="color-btn-3">Randomize Color</button>
-              </div>
+          <div  class="input-section">
+            <h2>Color #3</h2>
+            <div class="value-div">
+              <input type="color" id="color-input3" class="color-select">
+              <button class="color-random-btn" id="color-btn-3">Randomize Color</button>
             </div>
           </div>
           <hr>
-          <div>
-            <div>
-              <h2>Color #4</h2>
-              <div class="value-div">
-                <input type="color" id="color-input-4">
-                <button id="color-btn-4">Randomize Color</button>
-              </div>
+          <div  class="input-section">
+            <h2>Color #4</h2>
+            <div class="value-div">
+              <input type="color" id="color-input4" class="color-select">
+              <button class="color-random-btn" id="color-btn-4">Randomize Color</button>
             </div>
           </div>
           <hr>
-          <div>
-            <div>
-              <h2>Color #5</h2>
-              <div class="value-div">
-                <input type="color" id="color-input-5">
-                <button id="color-btn-5">Randomize Color</button>
-              </div>
+          <div  class="input-section">
+            <h2>Color #5</h2>
+            <div class="value-div">
+              <input type="color" id="color-input5" class="color-select">
+              <button class="color-random-btn" id="color-btn-5">Randomize Color</button>
             </div>
           </div>
           <hr>
         </div>
-        <div  class="half container">
+        <div class="half-results half container">
           <div id="color-model-container">
-            <div class="color-container color-header" id="color-div-1">
+            <div class="color-header" id="color-div-1">
               <h1>Color #</h1>
               <h2>hex:</h2>
               <p>######</p>
               <h2>hex:</h2>
               <p>######</p>
             </div>
-            <div class="color-container color-body" id="color-div-2">
-              <h1>Color #</h1>
-              <h2>hex:</h2>
-              <p>######</p>
-              <h2>hex:</h2>
-              <p>######</p>
-            </div>
-            <div class="color-container color-body" id="color-div-3">
-              <h1>Color #</h1>
-              <h2>hex:</h2>
-              <p>######</p>
-              <h2>hex:</h2>
-              <p>######</p>
-            </div>
-            <div class="color-container color-body" id="color-div-4">
-              <h1>Color #</h1>
-              <h2>hex:</h2>
-              <p>######</p>
-              <h2>hex:</h2>
-              <p>######</p>
-            </div>
-            <div class="color-container color-body" id="color-div-5">
-              <h1>Color #</h1>
-              <h2>hex:</h2>
-              <p>######</p>
-              <h2>hex:</h2>
-              <p>######</p>
+            <div class="color-row">
+              <div class="color-body" id="color-div-2">
+                <h1>Color #</h1>
+                <h2>hex:</h2>
+                <p>######</p>
+                <h2>hex:</h2>
+                <p>######</p>
+              </div>
+              <div class="color-body" id="color-div-3">
+                <h1>Color #</h1>
+                <h2>hex:</h2>
+                <p>######</p>
+                <h2>hex:</h2>
+                <p>######</p>
+              </div>
+              <div class="color-body" id="color-div-4">
+                <h1>Color #</h1>
+                <h2>hex:</h2>
+                <p>######</p>
+                <h2>hex:</h2>
+                <p>######</p>
+              </div>
+              <div class="color-body" id="color-div-5">
+                <h1>Color #</h1>
+                <h2>hex:</h2>
+                <p>######</p>
+                <h2>hex:</h2>
+                <p>######</p>
+              </div>
             </div>
           </div>
         </div>

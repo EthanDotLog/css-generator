@@ -9,7 +9,7 @@
   <body class="container">
     <header class="container">
       <a class="button-top" href="../index.html">Home</a>
-      <p>What Is A Color Gradient?</p>
+      <h2>What Is A Color Gradient?</h2>
       <form action="https://www.google.com/search" method="get" target="_blank">
         <input type="search" name="q" placeholder="Search google...">
         <button id="search-btn" type="submit">&#9740;</button>
@@ -17,43 +17,45 @@
     </header>
 
     <main>
-      <section>
+      <section class="info-page column">
         <h3>Let's dive into the world of CSS gradients! Imagine painting your website with not just one color, but a smooth, seamless blend of shades. That's the magic of the color gradient property. Imagine sunsets, glowing buttons, or backgrounds that fade like a polaroid dream – that's what gradients can add to your web design game! <br>Why are gradients so awesome? Well, for starters, they break up the flatness that can happen with solid colors. They add depth and dimension, making your elements pop! Whether you want a subtle shift for a background or a bold statement for a button, gradients can be your best friend.</h3>
-        <img src="" alt="" aria-label="">
-        <h2>Types Of Gradient & Breakdown Of The Values</h2>
-        <ol>Linear-Gradient:
-          <li><span>Degree: </span>How the gradient will flow.</li>
-          <li><span>Stop: </span>Where the transitions mix and mingle.</li>
-          <li><span>Colors: </span>Choice of colors separated by commas.</li>
-        </ol>
-        <ol>Radial-Gradient:
-          <li><span>Shape: </span>Determines if your gradient is a circle (circle) or an oval (ellipse).</li>
-          <li><span>Stop: </span>where the transitions happen.</li>
-          <li><span>Size: </span></li>
-          <li><span>Position: </span>Where do you want the center of your gradient to be? (center is the default, but you can customize!)</li>
-        </ol>
+        <img src="../assets/code.png" aria-label="">
+        <div>
+          <h2>Types Of Gradient & Breakdown Of The Values</h2>
+          <ol class="list-title">Linear-Gradient:
+            <li><span>Degree: </span>How the gradient will flow.</li>
+            <li><span>Stop: </span>Where the transitions mix and mingle.</li>
+            <li><span>Colors: </span>Choice of colors separated by commas.</li>
+          </ol>
+          <ol class="list-title">Radial-Gradient:
+            <li><span>Shape: </span>Determines if your gradient is a circle (circle) or an oval (ellipse).</li>
+            <li><span>Stop: </span>where the transitions happen.</li>
+            <li><span>Size: </span>Sets how big your gradient will be. You can go for the farthest corner (farthest-corner), the farthest side (farthest-side), the closest side (closest-side), or the closest corner (closest-corner).</li>
+            <li><span>Position: </span>Where do you want the center of your gradient to be? (center is the default, but you can customize!).</li>
+          </ol>
+        </div>
         <div class="extra-container">
           <p>Bonus:  You can layer multiple gradients using background-image? Mind. Blown.  Experiment and make some super trippy visuals – your websites will thank you!</p>
         </div>
       </section>
       <div class="mid">
-        <p>EthanDotLog's Color-Gradient Generator</p>
+        <h2>EthanDotLog's Color-Gradient Generator</h2>
       </div>
-      <section>
+      <section id="tool-element">
         <div class="half container">
-          <div>
-            <h2>Base Selections</h2>
+          <div class="input-section">
+            <h2>Base Selections:</h2>
             <div class="value-div">
-              <div>
-                <h3>Colors #</h3>
-                <div>
+              <div class="input-section">
+                <h3># Of Colors:</h3>
+                <div class="value-div">
                   <button>-</button>
                   <button>+</button>
                 </div>
               </div>
-              <div>
-                <h3>Style</h3>
-                <div class="style-choice">
+              <div class="input-section">
+                <h3>Style:</h3>
+                <div class="value-div">
                   <input checked type="radio" id="radio-false" name="true-false-pair" value="false"  hidden>
                   <label class="false radio"  for="radio-false">Linear</label>
                   <input type="radio" id="radio-true" name="true-false-pair" value="true" hidden>
@@ -63,74 +65,101 @@
             </div>
           </div>
           <hr>
-          <div id="choice-div-insert">
-            
+          <div class="input-section" id="gradient-js-choice-container">
+            <p>i am just filler..... dont mind me</p>
           </div>
-          <hr>
-          <div>
-            <h2>Color #1</h2>
-            <div class="value-div">
-              <input type="color" id="color-input 2">
-              <p>Stop %: </p>
-              <input type="number" min="0" max="100" step=".01">
-              <p>opacity: </p>
-              <input type="number" step=".01" min="0" max="1">
-              <button id="color-btn-2">Randomize Color</button>
+          <hr> <!--remove this once you have JS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+          <div class="input-section">
+            <h2>Color #1:</h2>
+            <div class="input-section">
+              <div class="value-div">
+              <input type="color" id="color-input-1" class="color-select">
+              <button id="color-btn-1">Randomize Color</button>
+              </div>
+              <div class="value-div">
+                <p>Stop %: </p>
+                <input type="number" min="0" max="100" step=".01">
+                <p>opacity: </p>
+                <input type="number" step=".01" min="0" max="1">
+                <button id="color-btn-1">Randomize Color</button>
+              </div>  
             </div>
           </div>
           <hr>
-          <div>
-            <h2>Color #2</h2>
-            <div class="value-div">
-              <input type="color" id="color-input 2">
-              <p>Stop %: </p>
-              <input type="number" min="0" max="100" step=".01">
-              <p>opacity: </p>
-              <input type="number" step=".01" min="0" max="1">
+          <div class="input-section">
+            <h2>Color #2:</h2>
+            <div class="input-section">
+              <div class="value-div">
+              <input type="color" id="color-input-2" class="color-select">
               <button id="color-btn-2">Randomize Color</button>
+              </div>
+              <div class="value-div">
+                <p>Stop %: </p>
+                <input type="number" min="0" max="100" step=".01">
+                <p>opacity: </p>
+                <input type="number" step=".01" min="0" max="1">
+                <button id="color-btn-2">Randomize Color</button>
+              </div>  
             </div>
           </div>
           <hr>
-          <div>
-            <h2>Color #3</h2>
-            <div class="value-div">
-              <input type="color" id="color-input 2">
-              <p>Stop %: </p>
-              <input type="number" min="0" max="100" step=".01">
-              <p>opacity: </p>
-              <input type="number" step=".01" min="0" max="1">
-              <button id="color-btn-2">Randomize Color</button>
+          <div class="input-section">
+            <h2>Color #3:</h2>
+            <div class="input-section">
+              <div class="value-div">
+              <input type="color" id="color-input-3" class="color-select">
+              <button id="color-btn-3">Randomize Color</button>
+              </div>
+              <div class="value-div">
+                <p>Stop %: </p>
+                <input type="number" min="0" max="100" step=".01">
+                <p>opacity: </p>
+                <input type="number" step=".01" min="0" max="1">
+                <button id="color-btn-3">Randomize Color</button>
+              </div>  
             </div>
           </div>
           <hr>
-          <div>
-            <h2>Color #4</h2>
-            <div class="value-div">
-              <input type="color" id="color-input 2">
-              <p>Stop %: </p>
-              <input type="number" min="0" max="100" step=".01">
-              <p>opacity: </p>
-              <input type="number" step=".01" min="0" max="1">
-              <button id="color-btn-2">Randomize Color</button>
+          <div class="input-section">
+            <h2>Color #4:</h2>
+            <div class="input-section">
+              <div class="value-div">
+              <input type="color" id="color-input-4" class="color-select">
+              <button id="color-btn-4">Randomize Color</button>
+              </div>
+              <div class="value-div">
+                <p>Stop %: </p>
+                <input type="number" min="0" max="100" step=".01">
+                <p>opacity: </p>
+                <input type="number" step=".01" min="0" max="1">
+                <button id="color-btn-4">Randomize Color</button>
+              </div>  
             </div>
           </div>
           <hr>
-          <div>
-            <h2>Color #5</h2>
-            <div class="value-div">
-              <input type="color" id="color-input 2">
-              <p>Stop %: </p>
-              <input type="number" min="0" max="100" step=".01">
-              <p>opacity: </p>
-              <input type="number" step=".01" min="0" max="1">
-              <button id="color-btn-2">Randomize Color</button>
+          <div class="input-section">
+            <h2>Color #5:</h2>
+            <div class="input-section">
+              <div class="value-div">
+              <input type="color" id="color-input-5" class="color-select">
+              <button id="color-btn-5">Randomize Color</button>
+              </div>
+              <div class="value-div">
+                <p>Stop %: </p>
+                <input type="number" min="0" max="100" step=".01">
+                <p>opacity: </p>
+                <input type="number" step=".01" min="0" max="1">
+                <button id="color-btn-5">Randomize Color</button>
+              </div>  
             </div>
           </div>
         </div>
-        <div  class="half container">
-          <div id="shadow-box-model"></div>
-          <div>
-            <h2>Your Custom Shadow-Box</h2>
+        <div class="half-results half container">
+          <div class="results-display">
+            <div id="shadow-box-model"></div>
+          </div>
+          <div class="results-container">
+            <h2>Your Custom Gradient</h2>
             <code id="results"></code>
           </div>
         </div>
@@ -138,10 +167,10 @@
     </main>
     <footer class="container">
       <div class="footer-buttons">
-        <a class="button-bottom" href="">Box-Shadow Generator</a>
-        <a class="button-bottom" href="">Text-Shadow Generator</a>
-        <a class="button-bottom" href="">Color Generator</a>
-        <a class="button-bottom" href="">About EthanDotLog</a>
+        <a class="button-bottom" href="./box-shadow.html">Box-Shadow Generator</a>
+        <a class="button-bottom" href="./text-shadow.html">Text-Shadow Generator</a>
+        <a class="button-bottom" href="./color.html">Color Generator</a>
+        <a class="button-bottom" href="./about.html">About EthanDotLog</a>
       </div>
       <p>Made By <a href="https://github.com/ethandotlog" target="_blank">EthanDotLog</a></p>
     </footer>
