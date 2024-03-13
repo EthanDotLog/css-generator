@@ -114,24 +114,6 @@ section {
   align-items: center;
   box-shadow: var(--box-shadow);
   padding: var(--padding-M) var(--padding-L);
-}
-
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--padding-M) var(--padding-L);
-}
-
-.footer-buttons {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.footer-buttons a {
-  width: 20%;
   text-align: center;
 }
 
@@ -194,6 +176,27 @@ form button {
 }
 
 
+
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-M) var(--padding-L);
+}
+
+.footer-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: var(--padding-S);
+}
+
+.footer-buttons a {
+  width: 20%;
+  text-align: center;
+}
 
 
 
@@ -268,7 +271,6 @@ form button {
 
 .about-main-div {
   display: flex;
-  flex-wrap: wrap;
   height: 50%;
   width: 100%;
   
@@ -375,6 +377,14 @@ form button {
   padding: var(--padding-M) var(--padding-L);
 }
 
+.thanks-container h2{
+  font-size: var(--font-L);    
+}
+
+.thanks-container p{
+  font-size: var(--font-S);
+}
+
 
 
 
@@ -450,6 +460,36 @@ form input:focus {
     height: 20vh;
   }
   
+  /* about page */
+  .about-main-div {
+    flex-wrap: wrap;
+  }
+  .about-main-div div{
+    height: 50%;
+  }
+  #about-top h3 {
+    height: 50%;
+  }
+  #about-top {
+    flex-wrap: wrap-reverse;
+  }
+  .about-text-top, .about-text-bottom {
+    width: 100%;
+  }
+  .about-img-div {
+    width: 100%;
+  }
+  .social-container div {
+    flex-wrap: wrap;
+  } 
+  .social-container div a {
+    width: 50%;
+  }
+  .footer-buttons a {
+    font-size: var(--font-S);
+  }
+
+
 
 
 }
