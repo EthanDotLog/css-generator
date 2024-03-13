@@ -77,6 +77,7 @@
   text-shadow: var(--text-shadow);
   color: var(--almost-black);
   font-family: 'okolaksregular', sans-serif;
+  line-height: 1.3rem;
 }
 
 body {
@@ -101,7 +102,6 @@ main {
 
 section {
   height: 100vh;
-  padding: var(--padding-M) 0;
   display: flex;
   width: 100%;
   padding: var(--padding-M) var(--padding-L);
@@ -127,6 +127,10 @@ a {
 
 .column {
   flex-direction: column;
+}
+
+#info-main {
+  height: 200vh;
 }
 
 
@@ -384,6 +388,77 @@ footer {
 .thanks-container p{
   font-size: var(--font-S);
 }
+
+
+
+/* INFO PAGE */
+#info-main h3 {
+  font-size: var(--font-S);
+  padding: var(--padding-M) var(--padding-L);
+}
+
+
+#info-main  img{
+  
+}
+
+#info-main  div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(19, 60, 95, .5);
+  padding: var(--padding-M) var(--padding-L);
+  box-shadow: var(--box-shadow), inset var(--box-shadow);
+}
+
+#info-main  div h2{
+  margin-bottom: var(--padding-L);
+  text-decoration: underline;
+  font-size: var(--font-L);
+}
+
+#info-main  div ol{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--padding-L);
+  margin-bottom: var(--padding-S);
+  
+}
+
+#info-main  div ol li{
+  font-style: italic;
+  background-color: rgba(235, 113, 38, .4);
+  padding: var(--padding-M) var(--padding-L);
+  box-shadow: inset var(--box-shadow-yellow), var(--box-shadow-yellow);
+}
+
+#info-main  div ol li::marker{
+  font-weight: bold;
+  color: var(--almost-white);
+  text-shadow: var(--text-shadow);
+}
+
+#info-main  div ol li span{
+  font-weight: bold;
+}
+
+.extra-container p{
+  font-size: var(--font-S);
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: var(--text-shadow-blue);
+  color: var(--almost-white);
+}
+
+.extra-container {
+  padding: var(--padding-M) var(--padding-L);
+  box-shadow: var(--box-shadow), inset var(--box-shadow);
+}
+
 
 
 
