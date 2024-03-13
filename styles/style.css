@@ -107,12 +107,32 @@ section {
   padding: var(--padding-M) var(--padding-L);
 }
 
+.mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  padding: var(--padding-M) var(--padding-L);
+}
+
 footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: var(--padding-M) var(--padding-L);
+}
+
+.footer-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.footer-buttons a {
+  width: 20%;
+  text-align: center;
 }
 
 a {
@@ -136,7 +156,7 @@ header div {
   justify-content: flex-start;
 }
 
-header a {
+header a , .footer-buttons a{
   padding: var(--padding-S) var(--padding-M);
   font-size: var(--font-M);
   box-shadow: var(--box-shadow);
@@ -238,23 +258,24 @@ form button {
 /* About Page*/
 
 .about-main-container {
-
+  height: 180vh;
+  gap: 0;
 }
 
 .about-main-section .about-top {
 
 }
 
-.about-main-section {
+.about-main-div {
   display: flex;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 50%;
   width: 100%;
   
 }
 
 .about-text-top {
-  width: 50%;
+  width: 60%;
   font-size: var(--font-XS);
   display: flex;
   flex-direction: column;
@@ -266,39 +287,140 @@ form button {
 }
 
 .about-text-bottom {
-  width: 50%;
+  width: 60%;
   font-size: var(--font-XS);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(169, 47, 42, 0.5);
   box-shadow: var(--box-shadow), var(--box-shadow) inset;
   padding: var(--padding-M);
+  
 }
 
-.about-main-section img {
-  width: 50%;
-  padding: var(--padding-M);
-  box-shadow: var(--box-shadow);
+.about-text-bottom ul li {
+  list-style: none;
+  font-style: italic;
+  padding: var(--padding-S) 0;
+}
+
+.about-text-bottom ul li a{
+  font-style:normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.about-text-bottom ul {
+  width: 70%;
+  padding: var(--padding-M) 0;
+}
+
+.about-img-div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow), inset var(--box-shadow);
   background-color: rgba(19, 60, 95, .5);
+  padding: var(--padding-M);
 }
 
+.about-main-div img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  box-shadow: var(--box-shadow);
+}
+
+/*social container*/
+
+.evenly {
+  justify-content: space-around;
+  text-align: center;
+  gap: var(--padding-S);
+}
+
+.social-container {
+  display: flex;
+}
+
+.social-container div {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--padding-XL);
+}
+
+.social-container  h2 {
+  text-decoration: underline;
+  font-size: var(--font-XL);
+}
+
+.social-container div a {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  font-size: var(--font-L);
+  text-decoration: underline;
+}
+
+.social-container div a h3 {
+  font-size: var(--font-XXL)
+}
+
+.thanks-container {
+  background-color: rgba(19, 60, 95, .5);
+  box-shadow: var(--box-shadow), inset var(--box-shadow);
+  padding: var(--padding-M) var(--padding-L);
+}
 
 
 
 
 
 /* effects */
-.page-container, header a, form input, form button {
+.page-container,
+header a,
+form input,
+form button,
+.social-container div a,
+.footer-buttons a {
   transition: box-shadow .6s ease-in-out, text-shadow .6s ease-in-out, color .6s ease-in-out;
 }
-.page-container:hover, header a:hover, form input:hover, form button:hover  {
+.page-container:hover,
+header a:hover,
+form input:hover,
+form button:hover,
+.social-container div a:hover,
+.footer-buttons a:hover {
   box-shadow: var(--box-shadow-yellow), inset var(--box-shadow-orange);
   color: var(--red);
   text-shadow: var(--text-shadow-blue);
+}
+li a,
+footer p a {
+  transition: box-shadow .6s ease-in-out, text-shadow .6s ease-in-out, color .6s ease-in-out, background-color .6s ease-in-out;
+}
+li a:hover,
+footer p a:hover {
+  color: var(--gold);
+  text-shadow: var(--text-shadow);
+  background-color: rgba(19, 60, 95, .7);
+  box-shadow: var(--box-shadow-yellow), inset var(--box-shadow-orange);
 }
 form input:focus {
   outline: none;
   border: 1px solid rgb(235, 113, 38);
 }
+.social-container div a h3 i, .social-container div a p {
+  transition: text-shadow .6s ease-in-out, color .6s ease-in-out;
+}
 
+.social-container div a h3 i:hover, .social-container div a p:hover {
+  color: var(--red);
+  text-shadow: var(--text-shadow-blue);
+}
 /* AT MEDIA FOR RESPONSE*/
 @media only screen and (max-width: 780px) {
   :root {
