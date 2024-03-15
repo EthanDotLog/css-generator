@@ -18,7 +18,7 @@
       </form>
     </header>
     <main>
-      <section id="info-main" class="evenly column">
+      <section id="info-main" class="main-container evenly column">
         <h3>CSS box-shadow property is about to blow your mind! Think of it like a superpower – you wanna make your buttons pop? Bam! A touch of box-shadow. Need your images to look extra mysterious and dramatic? Box-shadow to the rescue! <br><br> Basically, it lets you cast a dope shadow around any element on your page, giving it more depth and dimension. Plus, it's easy to play with!  And here's the magic code, hot off the presses:</h3>
         <img src="../assets/code.png" alt="" aria-label="">
         <div>
@@ -38,82 +38,82 @@
         </div>
       </section>
       <div class="mid">
-        <h2>EthanDotLog's Shadow-Box Generator</h2>
+        <h2>EthanDotLog's <br class="mobile-break">Shadow-Box Generator</h2>
       </div>
-      <section id="tool-element">
-        <div class="half container">
-          <div class="input-section">
+      <section>
+        <div>
+          <div>
             <h2>Horizontal Offset:</h2>
-            <div class="value-div">
-              <p class="min-max-value">-250</p>
-              <input class="slider-el" type="range" id="sliderHoff" min="-250" max="250" value="5">
+            <div>
+              <p>-250</p>
+              <input type="range" id="sliderHoff" min="-250" max="250" value="5">
               <p class="min-max-value">250</p>
-              <input type="number" class="value-preview" id="digitHoff"  value="5">
+              <input type="number" id="digitHoff"  value="5">
             </div>
           </div>
           <hr>
-          <div class="input-section">
+          <div>
             <h2>Vertical Offset:</h2>
-            <div class="value-div">
-              <p class="min-max-value">-250</p>
-              <input class="slider-el" type="range" id="sliderVoff" min="-250" max="250" value="5">
+            <div>
+              <p>-250</p>
+              <input type="range" id="sliderVoff" min="-250" max="250" value="5">
               <p class="min-max-value">250</p>
-              <input type="number" class="value-preview" id="digitVoff"  value="5">
+              <input type="number" id="digitVoff"  value="5">
             </div>
           </div>
           <hr>
-          <div class="input-section">
+          <div>
             <h2>Blur Radius:</h2>
-            <div class="value-div">
-              <p class="min-max-value">0</p>
-              <input class="slider-el" type="range" id="sliderBlur" min="0" max="400" value="5">
-              <p class="min-max-value">400</p>
-              <input type="number"  class="value-preview" id="digitBlur"  value="5">
+            <div>
+              <p>0</p>
+              <input type="range" id="sliderBlur" min="0" max="400" value="5">
+              <p>400</p>
+              <input type="number" id="digitBlur"  value="5">
             </div>
           </div>
           <hr>
-          <div class="input-section">
+          <div>
             <h2>Spread Radius:</h2>
-            <div class="value-div">
-              <p class="min-max-value">-250</p>
+            <div>
+              <p>-250</p>
               <input class="slider-el" type="range" id="sliderSpread" min="-250" max="250" value="5">
               <p class="min-max-value">250</p>
-              <input type="number" class="value-preview" id="digitSpread"  value="5">
+              <input type="number" id="digitSpread"  value="5">
             </div>
           </div>
           <hr>
-          <div class="input-section">
+          <div>
             <h2>Shadow Color:</h2>
-            <div class="value-div">
+            <div>
               <input type="color" id="color">
             </div>
           </div>
           <hr>
-          <div class="input-section">
+          <div>
             <h2>Shadow Color Opacity:</h2>
-            <div class="value-div">
-              <p class="min-max-value">0</p>
-              <input class="slider-el" type="range" id="sliderShadow" min="0" max="1" step=".01" value=".6">
-              <p class="min-max-value">1</p>
-              <input type="number"  class="value-preview" id="digitShadow"  value=".6">
+            <div>
+              <p>0</p>
+              <input type="range" id="sliderShadow" min="0" max="1" step=".01" value=".6">
+              <p>1</p>
+              <input type="number" id="digitShadow"  value=".6">
             </div>
           </div>
           <hr>
-          <div  class="input-section">
+          <div>
             <h2>Inset</h2>
-            <div class="value-div">
+            <div>
                 <input checked type="radio" id="radio-false" name="true-false-pair" value="false"  hidden>
-                <label class="false radio"  for="radio-false">OFF</label>
+                <label for="radio-false">OFF</label>
                 <input type="radio" id="radio-true" name="true-false-pair" value="true" hidden>
-                <label class="true radio" for="radio-true">ON</label>
+                <label for="radio-true">ON</label>
             </div>
           </div>
         </div>
-        <div class="half-results half container">
-          <div class="results-display">
+        <div>
+          <div>
             <div id="shadow-box-model"></div>
           </div>
-          <div class="results-container">
+          <div>
             <h2>Your Custom Shadow-Box</h2>
             <code id="results"></code>
           </div>
